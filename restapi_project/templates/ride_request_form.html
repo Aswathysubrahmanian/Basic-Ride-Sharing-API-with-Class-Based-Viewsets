@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ride request</title>
+</head>
+<body>
+<form method="POST" action="/rides/">
+    {% csrf_token %}
+    <label for="rider">Rider:</label>
+    <input type="text" name="rider" id="rider">
+
+    <label for="pickup_location">Pickup Location:</label>
+    <input type="text" name="pickup_location" id="pickup_location">
+
+    <label for="dropoff_location">Dropoff Location:</label>
+    <input type="text" name="dropoff_location" id="dropoff_location">
+
+    <button type="submit">Submit</button>
+</form>
+</body>
+</html>
